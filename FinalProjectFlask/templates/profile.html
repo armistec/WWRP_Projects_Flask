@@ -1,0 +1,12 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+<title>WWRP Programs</title>
+<h1> {{ output1 }} </h1>
+
+
+<form action="{{ url_for('ProgramType') }}" method="post">
+  <input type="radio" name="program" value="local parks" checked> Local Parks<br>
+  <input type="radio" name="program" value="state parks"> State Parks<br>
+  <input type="radio" name="program" value="habitat restoration"> Habitat Restoration
+  <input type="submit" value="Submit">
+</form>
